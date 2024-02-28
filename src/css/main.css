@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: #131518;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .container {
+  border-radius: 30px;
+  max-width: 412px;
+  height: 416px;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, rgb(35, 42, 52) 0%, rgb(24, 30, 39) 100%);
+  padding: 32px 39px 32px 32px;
+}
+.wrapper .container .star-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background: #262e38;
+  margin-bottom: 30px;
+}
+.wrapper .container .discription h1 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #fff;
+  height: 43px;
+  margin-bottom: 7px;
+}
+.wrapper .container .discription p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #969fad;
+  margin-bottom: 24px;
+}
+.wrapper .container .grades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 21px;
+  margin-bottom: 32px;
+}
+.wrapper .container .grades .grade {
+  width: 51px;
+  height: 51px;
+  border-radius: 100%;
+  background: #262e38;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .container .grades .grade p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #7c8798;
+}
+.wrapper .container .grades .grade:hover {
+  background: #7c8798;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  cursor: pointer;
+}
+.wrapper .container .grades .grade:hover p {
+  color: #fff;
+}
+.wrapper .container .grades .grade:active {
+  background: #fc7614;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+.wrapper .container .btn {
+  border-radius: 22px;
+  width: 341px;
+  height: 45px;
+  background: #fc7614;
+}
+.wrapper .container .btn a {
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.13em;
+  color: #fff;
+}
+.wrapper .container .btn:hover {
+  background: #fff;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  cursor: pointer;
+}
+.wrapper .container .btn:hover a {
+  color: #fc7614;
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper {
+    padding: 0 24px;
+  }
+  .wrapper .container {
+    border-radius: 15px;
+    max-width: 327px;
+    height: 360px;
+    padding: 24px 24px 32px 24px;
+  }
+  .wrapper .container .star-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
+  }
+  .wrapper .container .star-icon img {
+    width: 15px;
+    height: 14px;
+  }
+  .wrapper .container .discription h1 {
+    font-size: 24px;
+    height: 37px;
+    margin-bottom: 10px;
+  }
+  .wrapper .container .discription p {
+    font-size: 14px;
+    line-height: 157%;
+  }
+  .wrapper .container .grades {
+    margin-bottom: 32px;
+  }
+  .wrapper .container .grades .grade {
+    width: 42px;
+    height: 42px;
+  }
+  .wrapper .container .grades .grade p {
+    font-size: 14px;
+    line-height: 171%;
+  }
+  .wrapper .container .btn {
+    width: 279px;
+  }
+  .wrapper .container .btn a {
+    font-size: 15px;
+  }
+}

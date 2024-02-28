@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,700&display=swap");
+@import "./varebles";
+@import "./reset";
+
+body {
+  font-family: "Overpass", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: $very-dark-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+    border-radius: 30px;
+    max-width: 412px;
+    height: 416px;
+    background: radial-gradient(
+      98.96% 98.96% at 50% 0%,
+      rgb(35, 42, 52) 0%,
+      rgb(24, 30, 39) 100%
+    );
+    padding: 32px 39px 32px 32px;
+    .star-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      background: $dark-blue;
+      margin-bottom: 30px;
+    }
+    .discription {
+      h1 {
+        font-weight: $font-w_b;
+        font-size: 28px;
+        color: $pure-white;
+        height: 43px;
+        margin-bottom: 7px;
+      }
+      p {
+        font-weight: $font-w_s;
+        font-size: 15px;
+        line-height: 160%;
+        color: $light-grey;
+        margin-bottom: 24px;
+      }
+    }
+    .grades {
+      display: flex;
+      gap: 21px;
+      margin-bottom: 32px;
+      .grade {
+        width: 51px;
+        height: 51px;
+        border-radius: 100%;
+        background: $dark-blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          font-weight: $font-w_b;
+          font-size: 16px;
+          line-height: 150%;
+          letter-spacing: 0.01em;
+          text-align: center;
+          color: $medium-gray;
+        }
+        &:hover {
+          background: $medium-gray;
+          transition-duration: 0.5s;
+          cursor: pointer;
+          p {
+            color: $pure-white;
+          }
+        }
+        &:active {
+          background: $orange;
+          transition-duration: 0.7s;
+        }
+      }
+    }
+    .btn {
+      border-radius: 22px;
+      width: 341px;
+      height: 45px;
+      background: $orange;
+      a {
+        font-weight: $font-w_b;
+        font-size: 15px;
+        letter-spacing: 0.13em;
+        color: $pure-white;
+      }
+      &:hover {
+        background: $pure-white;
+        transition-duration: 0.5s;
+        cursor: pointer;
+        a {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .wrapper {
+    padding: 0 24px;
+    .container {
+      border-radius: 15px;
+      max-width: 327px;
+      height: 360px;
+      padding: 24px 24px 32px 24px;
+      .star-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 16px;
+        img {
+          width: 15px;
+          height: 14px;
+        }
+      }
+      .discription {
+        h1 {
+          font-size: 24px;
+          height: 37px;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 157%;
+        }
+      }
+      .grades {
+        margin-bottom: 32px;
+        .grade {
+          width: 42px;
+          height: 42px;
+          p {
+            font-size: 14px;
+            line-height: 171%;
+          }
+        }
+      }
+      .btn {
+        width: 279px;
+        a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
